@@ -10,3 +10,11 @@ vmlinux
 arch/arm/boot/Image
 arch/arm/boot/uImage
 arch/arm/boot/zImage
+
+
+scripts/dtc/dtc
+scripts/dtc/dtc-lexer.lex.c
+scripts/dtc/dtc-parser.tab.c
+scripts/dtc/dtc-parser.tab.h
+sun8iw7p1/bin/u-boot-sun8iw7p1.bin
+
