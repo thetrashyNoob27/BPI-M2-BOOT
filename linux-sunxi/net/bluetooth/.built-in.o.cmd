@@ -1,0 +1,1 @@
+cmd_net/bluetooth/built-in.o :=  /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o net/bluetooth/built-in.o net/bluetooth/bluetooth.o net/bluetooth/rfcomm/built-in.o net/bluetooth/bnep/built-in.o net/bluetooth/hidp/built-in.o ; scripts/mod/modpost net/bluetooth/built-in.o

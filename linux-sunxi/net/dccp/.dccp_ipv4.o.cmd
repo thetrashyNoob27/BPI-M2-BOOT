@@ -1,0 +1,1 @@
+cmd_net/dccp/dccp_ipv4.o := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o net/dccp/dccp_ipv4.o net/dccp/ipv4.o ; scripts/mod/modpost net/dccp/dccp_ipv4.o

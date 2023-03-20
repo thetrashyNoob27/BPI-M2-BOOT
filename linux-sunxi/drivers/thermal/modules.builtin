@@ -1,0 +1,8 @@
+kernel/drivers/thermal/thermal_sys.ko
+kernel/drivers/thermal/sunxi_thermal/sunxi_cooling_device/sunxi-budget-cooling.ko
+kernel/drivers/thermal/sunxi_thermal/sunxi_cooling_device/sunxi-budget-cooling-dvfs.ko
+kernel/drivers/thermal/sunxi_thermal/sunxi_cooling_device/sunxi-budget-cooling-hotplug.ko
+kernel/drivers/thermal/sunxi_thermal/sunxi_cooling_device/sunxi_gpu_cooling.ko
+kernel/drivers/thermal/sunxi_thermal/sunxi_thermal_sensor/sunxi_ths_combine.ko
+kernel/drivers/thermal/sunxi_thermal/sunxi_thermal_sensor/sunxi_ths_core.ko
+kernel/drivers/thermal/sunxi_thermal/sunxi_thermal_sensor/sunxi_ths_driver.ko

@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/tca6416-keypad.ko := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/input/keyboard/tca6416-keypad.ko drivers/input/keyboard/tca6416-keypad.o drivers/input/keyboard/tca6416-keypad.mod.o

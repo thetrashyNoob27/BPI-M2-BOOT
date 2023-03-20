@@ -1,0 +1,3 @@
+kernel/drivers/char/dump_reg/dump_reg.ko
+kernel/drivers/char/sunxi-di/deinterlace.ko
+kernel/drivers/char/sunxi-sysinfo/sysinfo.ko

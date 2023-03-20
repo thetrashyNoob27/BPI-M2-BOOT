@@ -1,0 +1,2 @@
+kernel/drivers/misc/sunxi-rf/sunxi-wlan.ko
+kernel/drivers/misc/sunxi-rf/sunxi-bluetooth.ko

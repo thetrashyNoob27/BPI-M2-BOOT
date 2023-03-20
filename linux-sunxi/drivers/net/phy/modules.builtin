@@ -1,0 +1,7 @@
+kernel/drivers/net/phy/libphy.ko
+kernel/drivers/net/phy/realtek.ko
+kernel/drivers/net/phy/fixed_phy.ko
+kernel/drivers/net/phy/mdio-mux.ko
+kernel/drivers/net/phy/mdio-mux-gpio.ko
+kernel/drivers/net/phy/mdio-mux-mmioreg.ko
+kernel/drivers/net/phy/mdio-sun4i.ko

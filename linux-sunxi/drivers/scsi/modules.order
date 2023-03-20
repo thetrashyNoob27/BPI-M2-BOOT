@@ -1,0 +1,3 @@
+kernel/drivers/scsi/st.ko
+kernel/drivers/scsi/osst.ko
+kernel/drivers/scsi/ch.ko

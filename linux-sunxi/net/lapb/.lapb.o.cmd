@@ -1,0 +1,1 @@
+cmd_net/lapb/lapb.o := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o net/lapb/lapb.o net/lapb/lapb_in.o net/lapb/lapb_out.o net/lapb/lapb_subr.o net/lapb/lapb_timer.o net/lapb/lapb_iface.o ; scripts/mod/modpost net/lapb/lapb.o

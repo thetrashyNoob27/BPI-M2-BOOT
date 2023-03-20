@@ -1,0 +1,9 @@
+export MACH=sun8iw7p1
+export ARCH=arm
+export BOARD=BPI-M2P-720P
+export board=bpi-m2p
+export UBOOT_CONFIG=sun8iw7p1_config
+export KERNEL_CONFIG=sun8iw7p1smp_bpi-m2p_defconfig
+export KERNEL_MODULES=4.4.55-BPI-M2P-Kernel
+export KERNEL_HEADERS=linux-headers-4.4.55-BPI-M2P-Kernel
+export TOPDIR=/mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT

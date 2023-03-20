@@ -1,0 +1,1 @@
+cmd_fs/quota/built-in.o :=  /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o fs/quota/built-in.o fs/quota/dquot.o fs/quota/quota_v2.o fs/quota/quota_tree.o fs/quota/quota.o fs/quota/kqid.o fs/quota/netlink.o ; scripts/mod/modpost fs/quota/built-in.o

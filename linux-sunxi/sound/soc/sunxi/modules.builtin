@@ -1,0 +1,5 @@
+kernel/sound/soc/sunxi/snd-soc-sunxi-daudio.ko
+kernel/sound/soc/sunxi/snd-soc-sunxi-spdif.ko
+kernel/sound/soc/sunxi/sun8iw7-sndcodec.ko
+kernel/sound/soc/sunxi/sunxi-sndhdmi.ko
+kernel/sound/soc/sunxi/sunxi-sndspdif.ko

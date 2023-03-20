@@ -1,0 +1,5 @@
+kernel/drivers/hid/hid-elecom.ko
+kernel/drivers/hid/hid-magicmouse.ko
+kernel/drivers/hid/hid-sony.ko
+kernel/drivers/hid/wacom.ko
+kernel/drivers/hid/hid-sensor-hub.ko
