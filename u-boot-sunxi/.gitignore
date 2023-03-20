@@ -1,3 +1,15 @@
 *.o
 *.a
+*.su
+*.cmd
 cur.log
+
+System.map
+arch/arm/lib/asm-offsets.s
+include/config/
+include/generated/
+lib/asm-offsets.s
+sunxi/u-boot
+u-boot*
+
+
