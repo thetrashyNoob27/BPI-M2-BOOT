@@ -13,8 +13,8 @@ kernel_config=
 kernel_modules=
 kernel_headers=
 
-TOOLCHAIN=gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf
-CROSS_COMPILE=$TOPDIR/toolchains/$TOOLCHAIN/bin
+CROSS_COMPILE_PREFIX=$TOPDIR/toolchains/arm-unknown-linux-gnueabihf/bin/arm-unknown-linux-gnueabihf- #update flashy GCC 11.2 but kernel is too old
+CROSS_COMPILE_PREFIX=$TOPDIR/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 
 list_boards() {
 	for boarddir in $(find sunxi-pack/*/configs/ -mindepth 1 -maxdepth 1 -type d | grep "BPI") ;
@@ -32,8 +32,8 @@ generate_board_mk() {
 	MACH=$MACH
 	ARCH=$ARCH
 	BOARD=$BOARD
-	COMPILE_TOOL=$CROSS_COMPILE
-	SPL_COMPILE_TOOL=$SPL_CROSS_COMPILE
+	COMPILE_TOOL=$CROSS_COMPILE_PREFIX
+	SPL_COMPILE_TOOL=$CROSS_COMPILE_PREFIX
 	UBOOT_CONFIG=$uboot_config
 	KERNEL_CONFIG=$kernel_config
 	EOT

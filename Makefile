@@ -4,14 +4,14 @@
 
 include chosen_board.mk
 
-CROSS_COMPILE=$(COMPILE_TOOL)/arm-linux-gnueabihf-
+CROSS_COMPILE=$(COMPILE_TOOL)
 U_CROSS_COMPILE=$(CROSS_COMPILE)
 K_CROSS_COMPILE=$(CROSS_COMPILE)
 
 ROOTFS=$(CURDIR)/rootfs/linux/default_linux_rootfs.tar.gz
 
 Q=
-J=$(shell expr `grep ^processor /proc/cpuinfo  | wc -l` \* 2)
+J=$(nproc)
 
 all: bsp
 bsp: u-boot kernel

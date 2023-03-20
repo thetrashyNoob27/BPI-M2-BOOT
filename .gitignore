@@ -2,3 +2,4 @@ out/
 chosen_board.mk
 env.sh
 sunxi-pack/sun8iw7p1/bin/u-boot-sun8iw7p1.bin
+SD/
