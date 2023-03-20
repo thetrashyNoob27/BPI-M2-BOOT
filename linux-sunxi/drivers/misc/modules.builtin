@@ -1,4 +1,0 @@
-kernel/drivers/misc/memory_state_time.ko
-kernel/drivers/misc/sst_storage/sst_storage.ko
-kernel/drivers/misc/sunxi-rf/sunxi-wlan.ko
-kernel/drivers/misc/sunxi-rf/sunxi-bluetooth.ko

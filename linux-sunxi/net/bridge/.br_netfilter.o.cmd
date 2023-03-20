@@ -1,1 +1,0 @@
-cmd_net/bridge/br_netfilter.o := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o net/bridge/br_netfilter.o net/bridge/br_netfilter_hooks.o net/bridge/br_netfilter_ipv6.o ; scripts/mod/modpost net/bridge/br_netfilter.o

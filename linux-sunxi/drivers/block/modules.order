@@ -1,3 +1,0 @@
-kernel/drivers/block/pktcdvd.ko
-kernel/drivers/block/nbd.ko
-kernel/drivers/block/rbd.ko

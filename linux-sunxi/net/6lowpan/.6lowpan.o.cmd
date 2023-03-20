@@ -1,1 +1,0 @@
-cmd_net/6lowpan/6lowpan.o := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o net/6lowpan/6lowpan.o net/6lowpan/core.o net/6lowpan/iphc.o net/6lowpan/nhc.o ; scripts/mod/modpost net/6lowpan/6lowpan.o

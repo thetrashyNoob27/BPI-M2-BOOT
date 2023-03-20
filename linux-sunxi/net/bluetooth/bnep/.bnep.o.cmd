@@ -1,1 +1,0 @@
-cmd_net/bluetooth/bnep/bnep.o := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o net/bluetooth/bnep/bnep.o net/bluetooth/bnep/core.o net/bluetooth/bnep/sock.o net/bluetooth/bnep/netdev.o ; scripts/mod/modpost net/bluetooth/bnep/bnep.o

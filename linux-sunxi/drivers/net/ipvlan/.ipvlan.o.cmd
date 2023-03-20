@@ -1,1 +1,0 @@
-cmd_drivers/net/ipvlan/ipvlan.o := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o drivers/net/ipvlan/ipvlan.o drivers/net/ipvlan/ipvlan_core.o drivers/net/ipvlan/ipvlan_main.o ; scripts/mod/modpost drivers/net/ipvlan/ipvlan.o

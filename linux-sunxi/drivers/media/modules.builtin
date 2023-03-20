@@ -1,8 +1,0 @@
-kernel/drivers/media/media.ko
-kernel/drivers/media/cedar-ve/cedar_ve.ko
-kernel/drivers/media/i2c/ir-kbd-i2c.ko
-kernel/drivers/media/rc/rc-core.ko
-kernel/drivers/media/rc/ir-nec-decoder.ko
-kernel/drivers/media/v4l2-core/videodev.ko
-kernel/drivers/media/v4l2-core/v4l2-common.ko
-kernel/drivers/media/v4l2-core/v4l2-dv-timings.ko

@@ -1,1 +1,0 @@
-cmd_net/rfkill/rfkill.o := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o net/rfkill/rfkill.o net/rfkill/core.o net/rfkill/input.o ; scripts/mod/modpost net/rfkill/rfkill.o

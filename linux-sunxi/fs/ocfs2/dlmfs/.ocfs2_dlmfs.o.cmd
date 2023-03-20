@@ -1,1 +1,0 @@
-cmd_fs/ocfs2/dlmfs/ocfs2_dlmfs.o := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o fs/ocfs2/dlmfs/ocfs2_dlmfs.o fs/ocfs2/dlmfs/userdlm.o fs/ocfs2/dlmfs/dlmfs.o ; scripts/mod/modpost fs/ocfs2/dlmfs/ocfs2_dlmfs.o

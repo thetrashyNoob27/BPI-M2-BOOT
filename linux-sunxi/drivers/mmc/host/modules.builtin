@@ -1,7 +1,0 @@
-kernel/drivers/mmc/host/sunxi-mmc.ko
-kernel/drivers/mmc/host/sunxi-mmc-debug.ko
-kernel/drivers/mmc/host/sunxi-mmc-export.ko
-kernel/drivers/mmc/host/sunxi-mmc-v4p1x.ko
-kernel/drivers/mmc/host/sunxi-mmc-v4p00x.ko
-kernel/drivers/mmc/host/sunxi-mmc-v4p10x.ko
-kernel/drivers/mmc/host/sunxi-mmc-v4p5x.ko

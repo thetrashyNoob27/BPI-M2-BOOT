@@ -1,3 +1,0 @@
-kernel/drivers/thermal/sunxi_thermal/sunxi_thermal_sensor/sunxi_ths_combine.ko
-kernel/drivers/thermal/sunxi_thermal/sunxi_thermal_sensor/sunxi_ths_core.ko
-kernel/drivers/thermal/sunxi_thermal/sunxi_thermal_sensor/sunxi_ths_driver.ko

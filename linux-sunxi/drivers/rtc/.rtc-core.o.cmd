@@ -1,1 +1,0 @@
-cmd_drivers/rtc/rtc-core.o := /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL   -r -o drivers/rtc/rtc-core.o drivers/rtc/class.o drivers/rtc/interface.o drivers/rtc/rtc-dev.o drivers/rtc/rtc-proc.o drivers/rtc/rtc-sysfs.o ; scripts/mod/modpost drivers/rtc/rtc-core.o

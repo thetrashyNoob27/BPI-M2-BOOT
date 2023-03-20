@@ -1,1 +1,0 @@
-cmd_sound/pci/emu10k1/built-in.o :=  rm -f sound/pci/emu10k1/built-in.o; /mnt/thinker1000/programming/bananaPi_M2_Zero/BPI-M2-BOOT/toolchains/gcc-linaro-7.3.1-2018.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ar rcsD sound/pci/emu10k1/built-in.o
