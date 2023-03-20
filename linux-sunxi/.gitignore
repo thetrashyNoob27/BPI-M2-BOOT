@@ -6,7 +6,6 @@
 arch/arm/boot/uImage
 arch/arm/boot/zImage
 arch/arm/boot/compressed/
-*output/
+*/output/*
 vmlinux
-
-/arch/arm/boot/zImage
+.tmp_*
