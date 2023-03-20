@@ -2,6 +2,7 @@
 *.so
 *.a
 *.ko
+.*
 *arch/arm/boot/Image
 arch/arm/boot/uImage
 arch/arm/boot/zImage
