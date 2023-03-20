@@ -4,7 +4,6 @@
 *.cmd
 *.builtin
 *.order
-.*
 arch/arm/include/generated/
 include/generated/
 vmlinux
