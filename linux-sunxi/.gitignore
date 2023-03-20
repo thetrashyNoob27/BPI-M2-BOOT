@@ -1,0 +1,13 @@
+*.o
+*.a
+*.ko
+*.cmd
+*.builtin
+*.order
+.*
+arch/arm/include/generated/
+include/generated/
+vmlinux
+arch/arm/boot/Image
+arch/arm/boot/uImage
+arch/arm/boot/zImage
