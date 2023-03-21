@@ -12,7 +12,7 @@ die() {
 
 . ./env.sh
 
-LINUX="$TOPDIR/linux-sunxi"
+LINUX="$TOPDIR/linux"
 DEST="$LINUX/output"
 
 echo "Using Linux from $LINUX ..."
