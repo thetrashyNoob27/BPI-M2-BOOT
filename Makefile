@@ -25,20 +25,20 @@ u-boot-clean:
 	$(Q)$(MAKE) -C u-boot-sunxi CROSS_COMPILE=$(U_CROSS_COMPILE) -j$J distclean
 
 kernel:
-	$(Q)$(MAKE) -C linux-sunxi ARCH=$(ARCH) $(KERNEL_CONFIG)
-	$(Q)$(MAKE) -C linux-sunxi ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J uImage dtbs LOADADDR=0x40008000
-	$(Q)$(MAKE) -C linux-sunxi ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J INSTALL_MOD_PATH=output modules
-	$(Q)$(MAKE) -C linux-sunxi ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J INSTALL_MOD_PATH=output modules_install
+	$(Q)$(MAKE) -C linux ARCH=$(ARCH) $(KERNEL_CONFIG)
+	$(Q)$(MAKE) -C linux ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J uImage dtbs LOADADDR=0x40008000
+	$(Q)$(MAKE) -C linux ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J INSTALL_MOD_PATH=output modules
+	$(Q)$(MAKE) -C linux ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J INSTALL_MOD_PATH=output modules_install
 	$(Q)scripts/install_kernel_headers.sh $(K_CROSS_COMPILE)
 
 kernel-clean:
-	$(Q)$(MAKE) -C linux-sunxi ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J distclean
-	rm -rf linux-sunxi/output/
+	$(Q)$(MAKE) -C linux ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J distclean
+	rm -rf linux/output/
 
 kernel-config:
-	$(Q)$(MAKE) -C linux-sunxi ARCH=$(ARCH) $(KERNEL_CONFIG)
-	$(Q)$(MAKE) -C linux-sunxi ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J menuconfig
-	cp linux-sunxi/.config linux-sunxi/arch/$(ARCH)/configs/$(KERNEL_CONFIG)
+	$(Q)$(MAKE) -C linux ARCH=$(ARCH) $(KERNEL_CONFIG)
+	$(Q)$(MAKE) -C linux ARCH=$(ARCH) CROSS_COMPILE=${K_CROSS_COMPILE} -j$J menuconfig
+	cp linux/.config linux/arch/$(ARCH)/configs/$(KERNEL_CONFIG)
 
 clean: u-boot-clean kernel-clean
 	rm -rf out/
