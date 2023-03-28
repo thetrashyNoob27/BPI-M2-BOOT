@@ -12,7 +12,7 @@ ROOTFS=$(CURDIR)/rootfs/linux/default_linux_rootfs.tar.gz
 
 Q=
 J=$(nproc)
-
+J=1
 all: bsp
 bsp: u-boot kernel
 

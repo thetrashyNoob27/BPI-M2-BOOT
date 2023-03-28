@@ -13,7 +13,7 @@ kernel_config=
 kernel_modules=
 kernel_headers=
 
-CROSS_COMPILE_PREFIX=$TOPDIR/../arm-banana-linux-gnueabihf/bin/arm-banana-linux-gnueabihf-
+CROSS_COMPILE_PREFIX=$TOPDIR/toolchains/arm-banana-linux-gnueabihf/bin/arm-banana-linux-gnueabihf-
 
 list_boards() {
 	for boarddir in $(find sunxi-pack/*/configs/ -mindepth 1 -maxdepth 1 -type d | grep "BPI") ;
