@@ -18,8 +18,8 @@ bsp: u-boot kernel
 
 # u-boot
 u-boot: 
-	$(Q)$(MAKE) -C u-boot-sunxi $(MACH)_config CROSS_COMPILE=$(U_CROSS_COMPILE) -j$J
-	$(Q)$(MAKE) -C u-boot-sunxi all CROSS_COMPILE=$(U_CROSS_COMPILE) -j$J
+	$(Q)$(MAKE) -C u-boot ${UBOOT_CONFIG} CROSS_COMPILE=$(U_CROSS_COMPILE) -j$J
+	$(Q)$(MAKE) -C u-boot all CROSS_COMPILE=$(U_CROSS_COMPILE) -j$J
 
 u-boot-clean:
 	$(Q)$(MAKE) -C u-boot-sunxi CROSS_COMPILE=$(U_CROSS_COMPILE) -j$J distclean
