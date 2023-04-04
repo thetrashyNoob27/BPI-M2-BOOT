@@ -17,7 +17,7 @@ DEST="$LINUX/output"
 
 echo "Using Linux from $LINUX ..."
 
-VERSION=$(strings $LINUX/arch/$ARCH/boot/Image |grep "Linux version"|awk '{print $3}')
+VERSION=$( cat "$LINUX/include/config/kernel.release")
 echo "Kernel build version $VERSION ..."
 if [ -z "$VERSION" ]; then
 	echo "Failed to get build version, correct <linux-folder>?"
