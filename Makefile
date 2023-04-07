@@ -22,7 +22,7 @@ u-boot:
 	$(Q)$(MAKE) -C u-boot all CROSS_COMPILE=$(U_CROSS_COMPILE) -j$J
 
 u-boot-clean:
-	$(Q)$(MAKE) -C u-boot-sunxi CROSS_COMPILE=$(U_CROSS_COMPILE) -j$J distclean
+	$(Q)$(MAKE) -C u-boot CROSS_COMPILE=$(U_CROSS_COMPILE) -j$J distclean
 
 kernel:
 	$(Q)$(MAKE) -C linux ARCH=$(ARCH) $(KERNEL_CONFIG)

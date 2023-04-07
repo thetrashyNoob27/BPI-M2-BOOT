@@ -277,7 +277,7 @@ function do_prepare()
 		exit 1
 	fi
 
-	PACK_KERN="linux-sunxi"
+	PACK_KERN="linux"
 
 	printf "copying tools file\n"
 	for file in ${tools_file_list[@]} ; do
@@ -372,11 +372,15 @@ function do_ini_to_dts()
 	    fi
 	fi
 
+
+	echo "$DTC_COMPILER ${DTC_FLAGS} -O dtb -o ${ROOT_DIR}/image/sunxi${SUFFIX}.dtb -b 0 -i $DTC_SRC_PATH  -F $DTC_INI_FILE -d $DTC_DEP_FILE $DTC_SRC_FILE"
 	$DTC_COMPILER ${DTC_FLAGS} -O dtb -o ${ROOT_DIR}/image/sunxi${SUFFIX}.dtb	\
 		-b 0			\
 		-i $DTC_SRC_PATH	\
-		-F $DTC_INI_FILE	\
+		#-F $DTC_INI_FILE	\ 
 		-d $DTC_DEP_FILE $DTC_SRC_FILE
+
+	echo "$DTC_COMPILER ${DTC_FLAGS} -O dtb -o ${ROOT_DIR}/image/sunxi${SUFFIX}.dtb -b 0 -i $DTC_SRC_PATH  -F $DTC_INI_FILE -d $DTC_DEP_FILE $DTC_SRC_FILE"
 
 	if [ $? -ne 0 ]; then
 		pack_error "Conver script to dts failed"

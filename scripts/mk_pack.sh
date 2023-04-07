@@ -17,7 +17,7 @@ BOOTLOADER=${TOPDIR}/SD/${board}/100MB
 BOOT=${TOPDIR}/SD/${board}/BPI-BOOT
 ROOT=${TOPDIR}/SD/${board}/BPI-ROOT
 CONFIG_DIR=${TOPDIR}/sunxi-pack/${MACH}/configs
-KERN_DIR=${TOPDIR}/linux-sunxi
+KERN_DIR=${TOPDIR}/linux
 
 if [ -d $TOPDIR/SD ]; then
   rm -rf $TOPDIR/SD
@@ -53,10 +53,10 @@ pack_boot()
 {
   echo "pack boot"
 
-  mkdir -p ${BOOT}/bananapi/${board}/linux4.4
-  cp -a ${CONFIG_DIR}/default/linux4.4/* ${BOOT}/bananapi/${board}/linux4.4/
-  cp -a ${CONFIG_DIR}/${BOARD%-*}-*/linux4.4/* ${BOOT}/bananapi/${board}/linux4.4/
-  cp -a ${KERN_DIR}/arch/$ARCH/boot/uImage ${BOOT}/bananapi/${board}/linux4.4/uImage
+  mkdir -p ${BOOT}/bananapi/${board}/linux
+  cp -a ${CONFIG_DIR}/default/linux/* ${BOOT}/bananapi/${board}/linux/
+  cp -a ${CONFIG_DIR}/${BOARD%-*}-*/linux/* ${BOOT}/bananapi/${board}/linux/
+  cp -a ${KERN_DIR}/arch/$ARCH/boot/uImage ${BOOT}/bananapi/${board}/linux/uImage
 }
 
 pack_root()

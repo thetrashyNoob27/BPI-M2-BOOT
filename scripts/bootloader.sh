@@ -20,19 +20,18 @@ mkdir -p $U
 TMP_FILE=${U}/${BOARD}-linux4.4-8k.tmp
 IMG_FILE=${U}/${BOARD}-linux4.4-8k.img
 
-(sudo dd if=/dev/zero of=${TMP_FILE} bs=1M count=100) >/dev/null 2>&1
+(dd if=/dev/zero of=${TMP_FILE} bs=1M count=100) >/dev/null 2>&1
 LOOP_DEV=`sudo losetup -f --show ${TMP_FILE}`
 
-(sudo dd if=$P/boot0_sdcard.fex	of=${LOOP_DEV} bs=1k seek=8) >/dev/null 2>&1
-(sudo dd if=$P/boot_package.fex of=${LOOP_DEV} bs=1k seek=16400) >/dev/null 2>&1
-(sudo dd if=$P/sunxi_mbr.fex 	of=${LOOP_DEV} bs=1k seek=20480) >/dev/null 2>&1
-(sudo dd if=$P/boot-resource.fex of=${LOOP_DEV} bs=1k seek=36864) >/dev/null 2>&1
-(sudo dd if=$P/env.fex 		of=${LOOP_DEV} bs=1k seek=53248) >/dev/null 2>&1
-#(sudo dd if=$P/boot.fex 	of=${LOOP_DEV} bs=1k seek=54272) >/dev/null 2>&1
+(if=$P/boot0_sdcard.fex	of=${TMP_FILE} bs=1k seek=8) >/dev/null 2>&1
+(dd if=$P/boot_package.fex of=${TMP_FILE} bs=1k seek=16400) >/dev/null 2>&1
+(dd if=$P/sunxi_mbr.fex 	of=${TMP_FILE} bs=1k seek=20480) >/dev/null 2>&1
+(dd if=$P/boot-resource.fex of=${TMP_FILE} bs=1k seek=36864) >/dev/null 2>&1
+(dd if=$P/env.fex 		of=${TMP_FILE} bs=1k seek=53248) >/dev/null 2>&1
+#(sudo dd if=$P/boot.fex 	of=${TMP_FILE} bs=1k seek=54272) >/dev/null 2>&1
 
 sudo sync
 
-sudo losetup -d ${LOOP_DEV}
 
 (dd if=${TMP_FILE} of=${IMG_FILE} bs=1024 skip=8 count=102392 status=noxfer) >/dev/null 2>&1
 
